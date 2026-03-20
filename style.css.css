@@ -1,0 +1,135 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 302px;
+  height: 302px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: relative;
+  background: linear-gradient(to right, white 50%, lightgray 50%);
+}
+
+.numbers span {
+  font-size: 43px;
+  font-weight: bold;
+  position: absolute;
+  color: black;
+  z-index: 2;
+}
+
+.n12 {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.n3 {
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+.n6 {
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.n9 {
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+}
+
+.n1 {
+  top: 25px;
+  right: 75px;
+}
+
+.n2 {
+  top: 63px;
+  right: 35px;
+}
+
+.n4 {
+  bottom: 60px;
+  right: 30px;
+}
+
+.n5 {
+  bottom: 20px;
+  right: 75px;
+}
+
+.n7 {
+  bottom: 25px;
+  left: 77px;
+}
+
+.n8 {
+  bottom: 65px;
+  left: 30px;
+}
+
+.n10 {
+  top: 70px;
+  left: 27px;
+}
+
+.n11 {
+  top: 25px;
+  left: 65px;
+}
+
+.hour,
+.minute,
+.second {
+  z-index: 1;
+  position: absolute;
+  width: 4px;
+  background-color: black;
+  left: 50%;
+  bottom: 50%;
+  transform-origin: bottom;
+}
+
+.hour {
+  height: 70px;
+  transform: translateX(-50%) rotate(-50deg);
+}
+
+.minute {
+  height: 100px;
+  transform: translateX(-50%) rotate(100deg);
+}
+
+.second {
+  height: 77px;
+  background-color: red;
+  transform: translateX(-50%) rotate(210deg);
+}
+
+.center {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
